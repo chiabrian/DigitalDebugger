@@ -1,0 +1,42 @@
+Altium Designer Pick and Place Locations
+E:\Data\Projects\Personal\PIC32MM\Digital Debugger\Project Outputs\Generates pick and place files\Pick Place for Digital Debugger.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       06/07/21
+Time:       21:09
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment           Layer    Footprint           Center-X(mil) Center-Y(mil) Rotation Description                                                    
+R10        1k                TopLayer RES_0603            940.000       165.000       360      "Res Thick 1k 75V 1/10W 1% 0603"                               
+R9         1k                TopLayer RES_0603            803.504       140.000       360      "Res Thick 1k 75V 1/10W 1% 0603"                               
+D2         Green             TopLayer DIO_0603            965.000       65.000        270      "Dio LED Green 2V 0603"                                        
+D1         Green             TopLayer DIO_0603            895.000       65.000        270      "Dio LED Green 2V 0603"                                        
+J4         PREC006DAAN-RC    TopLayer CONN_Male_2x6z      900.000       500.000       0        "Conn HDR PREC006DAAN-RC 0.1" 3A Male 2x6z"                    
+J5         PREC010SAAN-RC    TopLayer CONN_Male_1x10      500.000       950.000       180      "Conn HDR PREC010SAAN-RC 0.1" 3A Male 1x10"                    
+R7         120               TopLayer RES_0603            110.000       860.000       180      "Res Thick 120 75V 1/10W 1% 0603"                              
+R8         120               TopLayer RES_0603            310.000       860.000       180      "Res Thick 120 75V 1/10W 1% 0603"                              
+R6         120               TopLayer RES_0603            730.000       860.000       180      "Res Thick 120 75V 1/10W 1% 0603"                              
+R5         120               TopLayer RES_0603            600.000       860.000       180      "Res Thick 120 75V 1/10W 1% 0603"                              
+C9         0.1uF             TopLayer CAP_0603            335.000       525.000       270      "Cap Cer 0.1uF 50V 10% X7R 0603"                               
+C8         0.1uF             TopLayer CAP_0603            225.000       625.000       180      "Cap Cer 0.1uF 50V 10% X7R 0603"                               
+C6         1uF               TopLayer CAP_0603            90.000        500.000       90       "Cap Cer 1uF 10V 10% X5R 0603"                                 
+C7         1uF               TopLayer CAP_0603            565.000       215.000       180      "Cap Cer 1uF 10V 10% X5R 0603"                                 
+U6         ISL3176EIUZ-T     TopLayer MSOP-10             195.000       750.000       360      "IC Comm ISL3176EIUZ-T 3-3.6V RS422/RS485 FULL DUPLEX MSOP-10" 
+U5         ISL3176EIUZ-T     TopLayer MSOP-10             530.000       750.000       360      "IC Comm ISL3176EIUZ-T 3-3.6V RS422/RS485 FULL DUPLEX MSOP-10" 
+U3         LDLN025M33R       TopLayer SOT23-5             215.000       520.000       0        "IC Reg LDO LDLN025M33R 250mA 3.3V OUT SOT23-5"                
+U2         PIC32MM0256GPM048 TopLayer UQFN-48EP           577.953       430.866       0        "IC MCU PIC32MM0256GPM048 2-3.6V UQFN-48EP"                    
+R4         10k               TopLayer RES_0603            285.000       415.000       180      "Res Thick 10k 75V 1/10W 1% 0603"                              
+R3         1k                TopLayer RES_0603            340.000       180.000       90       "Res Thick 1k 75V 1/10W 1% 0603"                               
+R2         10k               TopLayer RES_0603            395.000       180.000       270      "Res Thick 10k 75V 1/10W 1% 0603"                              
+R1         10k               TopLayer RES_0603            175.000       415.000       180      "Res Thick 10k 75V 1/10W 1% 0603"                              
+J2         PREC006SAAN-RC    TopLayer CONN_Male_1x6       540.000       50.000        360      "Conn HDR PREC006SAAN-RC 0.1" 3A Male 1x6"                     
+J1         10118194-0001LF   TopLayer CONN_USB_MICRO_B_RA 116.220       200.000       270      "Conn Receptacle 10118194-0001LF 0.65mm USB Micro B RA"        
+C5         10uF              TopLayer CAP_0603            395.000       440.000       90       "Cap Cer 10uF 10V 10% X5R 0603"                                
+C4         0.1uF             TopLayer CAP_0603            450.000       180.000       270      "Cap Cer 0.1uF 50V 10% X7R 0603"                               
+C3         1uF               TopLayer CAP_0603            590.000       635.000       0        "Cap Cer 1uF 10V 10% X5R 0603"                                 
+C2         0.1uF             TopLayer CAP_0603            760.000       430.000       90       "Cap Cer 0.1uF 50V 10% X7R 0603"                               
+C1         1uF               TopLayer CAP_0603            35.000        500.000       90       "Cap Cer 1uF 10V 10% X5R 0603"                                 
