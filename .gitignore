@@ -1,3 +1,6 @@
 ECOProjectLogs
 History
 __Previews
+*.o
+*.d
+/DigitalDebugger.X/.generated_files/flags
