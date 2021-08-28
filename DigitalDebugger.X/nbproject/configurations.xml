@@ -82,6 +82,26 @@
         <itemPath>mcc_generated_files/mcc.h</itemPath>
       </logicalFolder>
     </logicalFolder>
+    <logicalFolder name="libs" displayName="libs" projectFiles="true">
+      <logicalFolder name="usb" displayName="usb" projectFiles="true">
+        <logicalFolder name="inc" displayName="inc" projectFiles="true">
+          <itemPath>libs/usb/inc/usb_device_cdc_class.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>libs/usb/src/usb_cdc_app.c</itemPath>
+          <itemPath>libs/usb/src/usb_device_cdc_class.c</itemPath>
+          <itemPath>libs/usb/src/usb_device_events_class.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="utils" displayName="utils" projectFiles="true">
+        <logicalFolder name="inc" displayName="inc" projectFiles="true">
+          <itemPath>libs/utils/inc/buf.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>libs/utils/src/buf.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -174,7 +194,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="FreeRTOS\include;Board;FreeRTOS\portable\MPLAB\PIC32MM"/>
+                  value="FreeRTOS\include;Board;FreeRTOS\portable\MPLAB\PIC32MM;mcc_generated_files\usb;libs\utils\inc"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="false"/>
@@ -305,14 +325,84 @@
       <item path="FreeRTOS/portable/Common/mpu_wrappers.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="FreeRTOS/portable/MemMang/heap_1.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="FreeRTOS/portable/MemMang/heap_2.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="FreeRTOS/portable/MemMang/heap_3.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="FreeRTOS/portable/MemMang/heap_5.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <Tool>
         <property key="ADC 1" value="true"/>
@@ -377,6 +467,8 @@
         <property key="memories.programmemory.ranges" value="1d000000-1d03ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="E:/Data/Projects/Personal/PIC32MM/DigitalDebugger.X/debug/default/DigitalDebugger_ptg"/>
         <property key="programmerToGoImageName" value="DigitalDebugger_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -406,6 +498,50 @@
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value="3.25"/>
       </Tool>
+      <item path="libs/usb/src/usb_cdc_app.c" ex="true" overriding="false">
+      </item>
+      <item path="libs/usb/src/usb_device_cdc_class.c" ex="true" overriding="false">
+      </item>
+      <item path="libs/usb/src/usb_device_events_class.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="mcc_generated_files/usb/usb_device_cdc.c"
+            ex="false"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="mcc_generated_files/usb/usb_device_events.c"
+            ex="false"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
       <pk4hybrid>
         <property key="ADC 1" value="true"/>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -449,8 +585,6 @@
         <property key="communication.interface" value=""/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="freeze.timers" value="false"/>
@@ -469,6 +603,8 @@
         <property key="memories.programmemory.ranges" value="1d000000-1d03ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="E:/Data/Projects/Personal/PIC32MM/DigitalDebugger.X/debug/default/DigitalDebugger_ptg"/>
         <property key="programmerToGoImageName" value="DigitalDebugger_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

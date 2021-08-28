@@ -68,7 +68,7 @@ static void usb_task(void *pvParameters)
 
 static void sys_task(void *pvParameters)
 {
-    TickType_t xTicksToDelay = 100;
+    TickType_t xTicksToDelay = 250;
     
     xTaskCreate(usb_task,
         (char*)"usb_task",
@@ -81,10 +81,6 @@ static void sys_task(void *pvParameters)
     {
         LATBINV = 0x0001;
         vTaskDelay(xTicksToDelay);
-        LATBINV = 0x0001;
-        LATBINV = 0x0002;
-        vTaskDelay(xTicksToDelay);
-        xTaskGetTickCount();
     }
 }
 

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/usb/usb_device_events.c mcc_generated_files/usb/usb_descriptors.c mcc_generated_files/usb/usb_device.c mcc_generated_files/usb/usb_device_cdc.c mcc_generated_files/usb/example_mcc_usb_cdc.c mcc_generated_files/clock.c mcc_generated_files/interrupt_manager.c mcc_generated_files/uart3.c mcc_generated_files/uart2.c mcc_generated_files/uart1.c mcc_generated_files/exceptions.c mcc_generated_files/pin_manager.c mcc_generated_files/i2c2.c mcc_generated_files/system.c mcc_generated_files/mcc.c main.c FreeRTOS/croutine.c FreeRTOS/event_groups.c FreeRTOS/list.c FreeRTOS/portable/MemMang/heap_4.c FreeRTOS/portable/MPLAB/PIC32MM/port.c FreeRTOS/portable/MPLAB/PIC32MM/port_asm.S FreeRTOS/queue.c FreeRTOS/tasks.c FreeRTOS/timers.c
+SOURCEFILES_QUOTED_IF_SPACED=FreeRTOS/portable/MemMang/heap_4.c FreeRTOS/portable/MPLAB/PIC32MM/port.c FreeRTOS/portable/MPLAB/PIC32MM/port_asm.S FreeRTOS/croutine.c FreeRTOS/event_groups.c FreeRTOS/list.c FreeRTOS/queue.c FreeRTOS/tasks.c FreeRTOS/timers.c libs/utils/src/buf.c mcc_generated_files/usb/usb_device_events.c mcc_generated_files/usb/usb_descriptors.c mcc_generated_files/usb/usb_device.c mcc_generated_files/usb/usb_device_cdc.c mcc_generated_files/usb/example_mcc_usb_cdc.c mcc_generated_files/clock.c mcc_generated_files/interrupt_manager.c mcc_generated_files/uart3.c mcc_generated_files/uart2.c mcc_generated_files/uart1.c mcc_generated_files/exceptions.c mcc_generated_files/pin_manager.c mcc_generated_files/i2c2.c mcc_generated_files/system.c mcc_generated_files/mcc.c main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/exceptions.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/i2c2.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/FreeRTOS/croutine.o ${OBJECTDIR}/FreeRTOS/event_groups.o ${OBJECTDIR}/FreeRTOS/list.o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o ${OBJECTDIR}/FreeRTOS/queue.o ${OBJECTDIR}/FreeRTOS/tasks.o ${OBJECTDIR}/FreeRTOS/timers.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart1.o.d ${OBJECTDIR}/mcc_generated_files/exceptions.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/i2c2.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/FreeRTOS/croutine.o.d ${OBJECTDIR}/FreeRTOS/event_groups.o.d ${OBJECTDIR}/FreeRTOS/list.o.d ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o.d ${OBJECTDIR}/FreeRTOS/queue.o.d ${OBJECTDIR}/FreeRTOS/tasks.o.d ${OBJECTDIR}/FreeRTOS/timers.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o ${OBJECTDIR}/FreeRTOS/croutine.o ${OBJECTDIR}/FreeRTOS/event_groups.o ${OBJECTDIR}/FreeRTOS/list.o ${OBJECTDIR}/FreeRTOS/queue.o ${OBJECTDIR}/FreeRTOS/tasks.o ${OBJECTDIR}/FreeRTOS/timers.o ${OBJECTDIR}/libs/utils/src/buf.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/exceptions.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/i2c2.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o.d ${OBJECTDIR}/FreeRTOS/croutine.o.d ${OBJECTDIR}/FreeRTOS/event_groups.o.d ${OBJECTDIR}/FreeRTOS/list.o.d ${OBJECTDIR}/FreeRTOS/queue.o.d ${OBJECTDIR}/FreeRTOS/tasks.o.d ${OBJECTDIR}/FreeRTOS/timers.o.d ${OBJECTDIR}/libs/utils/src/buf.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart1.o.d ${OBJECTDIR}/mcc_generated_files/exceptions.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/i2c2.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/exceptions.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/i2c2.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/FreeRTOS/croutine.o ${OBJECTDIR}/FreeRTOS/event_groups.o ${OBJECTDIR}/FreeRTOS/list.o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o ${OBJECTDIR}/FreeRTOS/queue.o ${OBJECTDIR}/FreeRTOS/tasks.o ${OBJECTDIR}/FreeRTOS/timers.o
+OBJECTFILES=${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port_asm.o ${OBJECTDIR}/FreeRTOS/croutine.o ${OBJECTDIR}/FreeRTOS/event_groups.o ${OBJECTDIR}/FreeRTOS/list.o ${OBJECTDIR}/FreeRTOS/queue.o ${OBJECTDIR}/FreeRTOS/tasks.o ${OBJECTDIR}/FreeRTOS/timers.o ${OBJECTDIR}/libs/utils/src/buf.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/exceptions.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/i2c2.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o
 
 # Source Files
-SOURCEFILES=mcc_generated_files/usb/usb_device_events.c mcc_generated_files/usb/usb_descriptors.c mcc_generated_files/usb/usb_device.c mcc_generated_files/usb/usb_device_cdc.c mcc_generated_files/usb/example_mcc_usb_cdc.c mcc_generated_files/clock.c mcc_generated_files/interrupt_manager.c mcc_generated_files/uart3.c mcc_generated_files/uart2.c mcc_generated_files/uart1.c mcc_generated_files/exceptions.c mcc_generated_files/pin_manager.c mcc_generated_files/i2c2.c mcc_generated_files/system.c mcc_generated_files/mcc.c main.c FreeRTOS/croutine.c FreeRTOS/event_groups.c FreeRTOS/list.c FreeRTOS/portable/MemMang/heap_4.c FreeRTOS/portable/MPLAB/PIC32MM/port.c FreeRTOS/portable/MPLAB/PIC32MM/port_asm.S FreeRTOS/queue.c FreeRTOS/tasks.c FreeRTOS/timers.c
+SOURCEFILES=FreeRTOS/portable/MemMang/heap_4.c FreeRTOS/portable/MPLAB/PIC32MM/port.c FreeRTOS/portable/MPLAB/PIC32MM/port_asm.S FreeRTOS/croutine.c FreeRTOS/event_groups.c FreeRTOS/list.c FreeRTOS/queue.c FreeRTOS/tasks.c FreeRTOS/timers.c libs/utils/src/buf.c mcc_generated_files/usb/usb_device_events.c mcc_generated_files/usb/usb_descriptors.c mcc_generated_files/usb/usb_device.c mcc_generated_files/usb/usb_device_cdc.c mcc_generated_files/usb/example_mcc_usb_cdc.c mcc_generated_files/clock.c mcc_generated_files/interrupt_manager.c mcc_generated_files/uart3.c mcc_generated_files/uart2.c mcc_generated_files/uart1.c mcc_generated_files/exceptions.c mcc_generated_files/pin_manager.c mcc_generated_files/i2c2.c mcc_generated_files/system.c mcc_generated_files/mcc.c main.c
 
 
 
@@ -123,294 +123,306 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o: mcc_generated_files/usb/usb_device_events.c  .generated_files/flags/default/8fa2e0a3183451043a094ca9f396b8b608c0bff7 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o mcc_generated_files/usb/usb_device_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o: mcc_generated_files/usb/usb_descriptors.c  .generated_files/flags/default/e49bddf4fb27efb7d94fb28247879c27d00d8663 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o mcc_generated_files/usb/usb_descriptors.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_device.o: mcc_generated_files/usb/usb_device.c  .generated_files/flags/default/e2591d95f7e58b946328d94acb455539df1986c .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o mcc_generated_files/usb/usb_device.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o: mcc_generated_files/usb/usb_device_cdc.c  .generated_files/flags/default/efd516732d06fb53e02f9c5fb24329222f4cbcdc .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o mcc_generated_files/usb/usb_device_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o: mcc_generated_files/usb/example_mcc_usb_cdc.c  .generated_files/flags/default/39433c3446b2247b7d37de37e3b56b7be48985be .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o mcc_generated_files/usb/example_mcc_usb_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/default/6daec0bed1c23b468ef1b9ec9ec1d246a25b3e31 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d" -o ${OBJECTDIR}/mcc_generated_files/clock.o mcc_generated_files/clock.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/default/affec871b9085b75dd54a23a865a55cc53b363a6 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o mcc_generated_files/interrupt_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  .generated_files/flags/default/3c7422d467da2d8bbade63ddd00ba2af8df09fc6 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart3.o mcc_generated_files/uart3.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart2.o: mcc_generated_files/uart2.c  .generated_files/flags/default/d9fe517f5d1dd82c23e01443d112529a9f2daad7 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart2.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart2.o mcc_generated_files/uart2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/default/85191a505b1254201b491d0d7f667e4616bb9728 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart1.o mcc_generated_files/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/exceptions.o: mcc_generated_files/exceptions.c  .generated_files/flags/default/beb3e98a5fead477866f95d051bff3c11a150abb .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/exceptions.o.d" -o ${OBJECTDIR}/mcc_generated_files/exceptions.o mcc_generated_files/exceptions.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/default/ba24415088b62625ddbd82fd8b96e9e9b6fee3fe .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o mcc_generated_files/pin_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/i2c2.o: mcc_generated_files/i2c2.c  .generated_files/flags/default/c2636f422797acb4a2e3d6c0114aab236e44a4c7 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/i2c2.o.d" -o ${OBJECTDIR}/mcc_generated_files/i2c2.o mcc_generated_files/i2c2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/default/8f8189c1ce103e0e011780f4edf4d2b778a2c5f7 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d" -o ${OBJECTDIR}/mcc_generated_files/system.o mcc_generated_files/system.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/default/86f37a2103b82cc394a1ed63f7db68537e835255 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d" -o ${OBJECTDIR}/mcc_generated_files/mcc.o mcc_generated_files/mcc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/769c64c2dffe80cc1efdc73cc0c27c9c7d6c60a3 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o.d 
-	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/croutine.o: FreeRTOS/croutine.c  .generated_files/flags/default/9b89afdeebc3aef8c3638b4cfbc6d6b6dbc49553 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/croutine.o.d" -o ${OBJECTDIR}/FreeRTOS/croutine.o FreeRTOS/croutine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/event_groups.o: FreeRTOS/event_groups.c  .generated_files/flags/default/66ad14322ac47b74bb330538277996a46fe40fee .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/event_groups.o.d" -o ${OBJECTDIR}/FreeRTOS/event_groups.o FreeRTOS/event_groups.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/93ceff40c6b5d221aef14578ffac9e0213ac1871 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/list.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/list.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d" -o ${OBJECTDIR}/FreeRTOS/list.o FreeRTOS/list.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o: FreeRTOS/portable/MemMang/heap_4.c  .generated_files/flags/default/36be84866521b26f25075990c0f717c3fb659c99 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o: FreeRTOS/portable/MemMang/heap_4.c  .generated_files/flags/default/ec1c3e7853da275b49c17cce4430435a88e8fe .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/portable/MemMang" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o FreeRTOS/portable/MemMang/heap_4.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o FreeRTOS/portable/MemMang/heap_4.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o: FreeRTOS/portable/MPLAB/PIC32MM/port.c  .generated_files/flags/default/6adf0331db5b1bca261eb14f644e451ca24c92f1 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o: FreeRTOS/portable/MPLAB/PIC32MM/port.c  .generated_files/flags/default/d7e9335351ed6b21972ca55923f4db6a49beb0e3 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o FreeRTOS/portable/MPLAB/PIC32MM/port.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o FreeRTOS/portable/MPLAB/PIC32MM/port.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/a5c7acd9e0d4d242cf2e94b401b95a9144cec4ae .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/croutine.o: FreeRTOS/croutine.c  .generated_files/flags/default/6da1e862b89ca19c4115343694840a756a4f17f .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/croutine.o.d" -o ${OBJECTDIR}/FreeRTOS/croutine.o FreeRTOS/croutine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/event_groups.o: FreeRTOS/event_groups.c  .generated_files/flags/default/3f4974034cd9dfdb61a707a9c1c9744667829f54 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/event_groups.o.d" -o ${OBJECTDIR}/FreeRTOS/event_groups.o FreeRTOS/event_groups.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/3421f948fdbc9da46e1140e6f710241b367ea711 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/list.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/list.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d" -o ${OBJECTDIR}/FreeRTOS/list.o FreeRTOS/list.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/6fd8fed3db8d8260602e7165650ee773d4078c56 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d" -o ${OBJECTDIR}/FreeRTOS/queue.o FreeRTOS/queue.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d" -o ${OBJECTDIR}/FreeRTOS/queue.o FreeRTOS/queue.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/505c2727b374098069db23ca06aa2523dcf8a34a .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/8c921f00a96f6768632c6d781e7a36efb1b89940 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d" -o ${OBJECTDIR}/FreeRTOS/tasks.o FreeRTOS/tasks.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d" -o ${OBJECTDIR}/FreeRTOS/tasks.o FreeRTOS/tasks.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/timers.o: FreeRTOS/timers.c  .generated_files/flags/default/15597d6346753bd0ab665c513a805a020b121cf2 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/timers.o: FreeRTOS/timers.c  .generated_files/flags/default/be435fe4b8324d663ace773c1a7a5f16028905b4 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/timers.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/timers.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/timers.o.d" -o ${OBJECTDIR}/FreeRTOS/timers.o FreeRTOS/timers.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/timers.o.d" -o ${OBJECTDIR}/FreeRTOS/timers.o FreeRTOS/timers.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/libs/utils/src/buf.o: libs/utils/src/buf.c  .generated_files/flags/default/108c9ef576218dff48ec28fada5e16640f6373d .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/libs/utils/src" 
+	@${RM} ${OBJECTDIR}/libs/utils/src/buf.o.d 
+	@${RM} ${OBJECTDIR}/libs/utils/src/buf.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/libs/utils/src/buf.o.d" -o ${OBJECTDIR}/libs/utils/src/buf.o libs/utils/src/buf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o: mcc_generated_files/usb/usb_device_events.c  .generated_files/flags/default/5ae8943b15b6ae5ff90cb47492b9a8927c2fd5cc .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o mcc_generated_files/usb/usb_device_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o: mcc_generated_files/usb/usb_descriptors.c  .generated_files/flags/default/cfaaa849783a7cc67928aeb324795447be2dea87 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o mcc_generated_files/usb/usb_descriptors.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device.o: mcc_generated_files/usb/usb_device.c  .generated_files/flags/default/d62ff55d2a05931453d687916a0f0ddf0166fbda .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o mcc_generated_files/usb/usb_device.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o: mcc_generated_files/usb/usb_device_cdc.c  .generated_files/flags/default/2eabe5447c25f0b767f7c7ccc330012b7edf4e62 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o mcc_generated_files/usb/usb_device_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o: mcc_generated_files/usb/example_mcc_usb_cdc.c  .generated_files/flags/default/18f38e1dc676683820eee80d1af949955eeff8a3 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o mcc_generated_files/usb/example_mcc_usb_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/default/39c0d1471d0f7bef6eaf90b3ade3cf5bdc2a7a66 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d" -o ${OBJECTDIR}/mcc_generated_files/clock.o mcc_generated_files/clock.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/default/da4b3811d5bb1972e7a5fb547267d1d2084807a3 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o mcc_generated_files/interrupt_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  .generated_files/flags/default/a8f07453d697246d8910e5703f785199b9673307 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart3.o mcc_generated_files/uart3.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart2.o: mcc_generated_files/uart2.c  .generated_files/flags/default/cd6376804a12b6ba73f653ea2e6c4d0d3bda8635 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart2.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart2.o mcc_generated_files/uart2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/default/a60462cdfe0ae8691ae378f86e51dcf0e3056d23 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart1.o mcc_generated_files/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/exceptions.o: mcc_generated_files/exceptions.c  .generated_files/flags/default/b5f4066e9e5399a0e2108b92528e356124b7e52e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/exceptions.o.d" -o ${OBJECTDIR}/mcc_generated_files/exceptions.o mcc_generated_files/exceptions.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/default/28eb4cded31dbc77d6c61aee1892e2a65b1978e2 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o mcc_generated_files/pin_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/i2c2.o: mcc_generated_files/i2c2.c  .generated_files/flags/default/8ff28c34cb224e223e09364207729ebf5666f1d9 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/i2c2.o.d" -o ${OBJECTDIR}/mcc_generated_files/i2c2.o mcc_generated_files/i2c2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/default/2f52a0f703fd40e0e314bbc529bf56341bcca999 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d" -o ${OBJECTDIR}/mcc_generated_files/system.o mcc_generated_files/system.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/default/bb2cefa30b5d8e2e969f20ee491192134c3d8f0b .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d" -o ${OBJECTDIR}/mcc_generated_files/mcc.o mcc_generated_files/mcc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/bfba71ba313cb15db2fa644e66fb218617b4020f .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
-${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o: mcc_generated_files/usb/usb_device_events.c  .generated_files/flags/default/b770777baaf2fc683ddd0b1f7054a42bba55b62 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o mcc_generated_files/usb/usb_device_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o: mcc_generated_files/usb/usb_descriptors.c  .generated_files/flags/default/fa5827fe3564c717781205e3d47e7aa1e1980c0b .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o mcc_generated_files/usb/usb_descriptors.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_device.o: mcc_generated_files/usb/usb_device.c  .generated_files/flags/default/b0b775e75df05d4460c88736a1352ba7e73449d .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o mcc_generated_files/usb/usb_device.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o: mcc_generated_files/usb/usb_device_cdc.c  .generated_files/flags/default/8254c0a565d0a1e410ecfad98de5b8746864afde .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o mcc_generated_files/usb/usb_device_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o: mcc_generated_files/usb/example_mcc_usb_cdc.c  .generated_files/flags/default/bee10162e4eff1fb3a571e99ddc67369b945440a .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o mcc_generated_files/usb/example_mcc_usb_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/default/7c223d13099a2b0de57662326c03df4e6b77979e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d" -o ${OBJECTDIR}/mcc_generated_files/clock.o mcc_generated_files/clock.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/default/e91b668b7b4807f88744b0f767ec6febad947f58 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o mcc_generated_files/interrupt_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  .generated_files/flags/default/499f8176c41bb3dbc59fd0ca34439e7c74c24584 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart3.o mcc_generated_files/uart3.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart2.o: mcc_generated_files/uart2.c  .generated_files/flags/default/ec3a5e94749c6e39b27a32dc0840e700f47e131a .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart2.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart2.o mcc_generated_files/uart2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/default/a8d2251ca76852afaf573952baa6a0a4185f6b38 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart1.o mcc_generated_files/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/exceptions.o: mcc_generated_files/exceptions.c  .generated_files/flags/default/a2ddb25fd88fc29b85ed675ea6db5f56cae08b1a .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/exceptions.o.d" -o ${OBJECTDIR}/mcc_generated_files/exceptions.o mcc_generated_files/exceptions.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/default/8d9f498468d1e6dd7494a58d56829f6ef4232b8 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o mcc_generated_files/pin_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/i2c2.o: mcc_generated_files/i2c2.c  .generated_files/flags/default/da513d14f53848ef6b3eab996a03aafb4d79d22e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/i2c2.o.d" -o ${OBJECTDIR}/mcc_generated_files/i2c2.o mcc_generated_files/i2c2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/default/ddaf9192d4a383cb349f27cd649a3d0aad0abf15 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d" -o ${OBJECTDIR}/mcc_generated_files/system.o mcc_generated_files/system.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/default/48f1e48776908f54ce863429009114ac79819832 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d" -o ${OBJECTDIR}/mcc_generated_files/mcc.o mcc_generated_files/mcc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/4afb695bb5d3e62878022de64c183b93bf3b3a0d .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o.d 
-	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/croutine.o: FreeRTOS/croutine.c  .generated_files/flags/default/d267e33a358798df5fe5da385e3730ab7fe98d95 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/croutine.o.d" -o ${OBJECTDIR}/FreeRTOS/croutine.o FreeRTOS/croutine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/event_groups.o: FreeRTOS/event_groups.c  .generated_files/flags/default/c4efeddc40d3e511a160a16f83385e6d752ed93d .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/event_groups.o.d" -o ${OBJECTDIR}/FreeRTOS/event_groups.o FreeRTOS/event_groups.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/cb079892238715019738152b08cfc97175e5c91c .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
-	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
-	@${RM} ${OBJECTDIR}/FreeRTOS/list.o.d 
-	@${RM} ${OBJECTDIR}/FreeRTOS/list.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d" -o ${OBJECTDIR}/FreeRTOS/list.o FreeRTOS/list.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o: FreeRTOS/portable/MemMang/heap_4.c  .generated_files/flags/default/d0f0a7a7fdb465d54263fb99a621f66097142227 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o: FreeRTOS/portable/MemMang/heap_4.c  .generated_files/flags/default/aaa959eaad9ccd39ef05f2c27dc4fdaa8b9d735a .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/portable/MemMang" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o FreeRTOS/portable/MemMang/heap_4.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MemMang/heap_4.o FreeRTOS/portable/MemMang/heap_4.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o: FreeRTOS/portable/MPLAB/PIC32MM/port.c  .generated_files/flags/default/51e7dbbac5954be27b0408cb7fa3c1f327b1d0d5 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o: FreeRTOS/portable/MPLAB/PIC32MM/port.c  .generated_files/flags/default/95e08803dd4f1f8ced367e6fb04dfd18ff0f4b0e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o FreeRTOS/portable/MPLAB/PIC32MM/port.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o.d" -o ${OBJECTDIR}/FreeRTOS/portable/MPLAB/PIC32MM/port.o FreeRTOS/portable/MPLAB/PIC32MM/port.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/d9815ea33934295ca7347e8da1ed4ac7aef047c3 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/croutine.o: FreeRTOS/croutine.c  .generated_files/flags/default/2f7e4b481ab8bb4fa8899993819113c6006aefcf .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/croutine.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/croutine.o.d" -o ${OBJECTDIR}/FreeRTOS/croutine.o FreeRTOS/croutine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/event_groups.o: FreeRTOS/event_groups.c  .generated_files/flags/default/8a80d14eaff1a0a0cc2f5b3ae8d08875d8299aab .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/event_groups.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/event_groups.o.d" -o ${OBJECTDIR}/FreeRTOS/event_groups.o FreeRTOS/event_groups.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/e8f6ae2d7bbfa6134e744f2b1e208bbe75db5f8 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
+	@${RM} ${OBJECTDIR}/FreeRTOS/list.o.d 
+	@${RM} ${OBJECTDIR}/FreeRTOS/list.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d" -o ${OBJECTDIR}/FreeRTOS/list.o FreeRTOS/list.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/522a1d3eb141bc82a1abba48e893d4a2182266a6 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d" -o ${OBJECTDIR}/FreeRTOS/queue.o FreeRTOS/queue.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d" -o ${OBJECTDIR}/FreeRTOS/queue.o FreeRTOS/queue.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/6021e4bfc7349c2c70eafeaa6448b70eb0b70fd .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/3412372c0ffcf53509325277d18532c03e783caa .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d" -o ${OBJECTDIR}/FreeRTOS/tasks.o FreeRTOS/tasks.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d" -o ${OBJECTDIR}/FreeRTOS/tasks.o FreeRTOS/tasks.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/FreeRTOS/timers.o: FreeRTOS/timers.c  .generated_files/flags/default/5c77a330f243e59ab72c88c8d714a693c106f92e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+${OBJECTDIR}/FreeRTOS/timers.o: FreeRTOS/timers.c  .generated_files/flags/default/f4da022b5bc0939b67aee03688c57651d0e841b8 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/timers.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/timers.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/timers.o.d" -o ${OBJECTDIR}/FreeRTOS/timers.o FreeRTOS/timers.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/timers.o.d" -o ${OBJECTDIR}/FreeRTOS/timers.o FreeRTOS/timers.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/libs/utils/src/buf.o: libs/utils/src/buf.c  .generated_files/flags/default/e8c1158aa9e11f6580bc5b00943b05f9316ad93e .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/libs/utils/src" 
+	@${RM} ${OBJECTDIR}/libs/utils/src/buf.o.d 
+	@${RM} ${OBJECTDIR}/libs/utils/src/buf.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/libs/utils/src/buf.o.d" -o ${OBJECTDIR}/libs/utils/src/buf.o libs/utils/src/buf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o: mcc_generated_files/usb/usb_device_events.c  .generated_files/flags/default/babe7b487e88e415401f350d42b6f8904ba92782 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_events.o mcc_generated_files/usb/usb_device_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o: mcc_generated_files/usb/usb_descriptors.c  .generated_files/flags/default/973072ce5a05dba7f81055e4490d1229c4422ae8 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_descriptors.o mcc_generated_files/usb/usb_descriptors.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device.o: mcc_generated_files/usb/usb_device.c  .generated_files/flags/default/90d0ebf8473c26fd559d68634535524ee5f238d0 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device.o mcc_generated_files/usb/usb_device.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o: mcc_generated_files/usb/usb_device_cdc.c  .generated_files/flags/default/78fec034129a79bd0987d9eeb7f0b8e5618cec76 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/usb_device_cdc.o mcc_generated_files/usb/usb_device_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o: mcc_generated_files/usb/example_mcc_usb_cdc.c  .generated_files/flags/default/1e4b5ad82d34245191738a4ffbce11fa7cf49d8b .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files/usb" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o.d" -o ${OBJECTDIR}/mcc_generated_files/usb/example_mcc_usb_cdc.o mcc_generated_files/usb/example_mcc_usb_cdc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/default/cdc0213a2ba60ca853b1b13395afa1f957c570b7 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d" -o ${OBJECTDIR}/mcc_generated_files/clock.o mcc_generated_files/clock.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/default/961825c494bf657e37bce3200341ee55044eeedd .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o mcc_generated_files/interrupt_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  .generated_files/flags/default/f55403afe055c4498f31c8ff7c89d3deab5baed1 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart3.o mcc_generated_files/uart3.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart2.o: mcc_generated_files/uart2.c  .generated_files/flags/default/7d72e85047a65a56c09ca00822cc4d8bcc576aa1 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart2.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart2.o mcc_generated_files/uart2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/default/ebced0aa5199e963d3cf90092c32cbe18bc684ca .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d" -o ${OBJECTDIR}/mcc_generated_files/uart1.o mcc_generated_files/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/exceptions.o: mcc_generated_files/exceptions.c  .generated_files/flags/default/976f5b2a3ef06f308394aa08c860bc7672c7b021 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/exceptions.o.d" -o ${OBJECTDIR}/mcc_generated_files/exceptions.o mcc_generated_files/exceptions.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/default/eb5721b567130995762de3fe4987e71884024c0c .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d" -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o mcc_generated_files/pin_manager.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/i2c2.o: mcc_generated_files/i2c2.c  .generated_files/flags/default/b65c19820199792cb0c3d5eac7762261560d86d .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/i2c2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/i2c2.o.d" -o ${OBJECTDIR}/mcc_generated_files/i2c2.o mcc_generated_files/i2c2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/default/198ada2cc79d5a799cdc2fb2c7e8508bb14f5edd .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d" -o ${OBJECTDIR}/mcc_generated_files/system.o mcc_generated_files/system.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/default/99b82dbd7467d9949f3803f8a1edd76c15405196 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d" -o ${OBJECTDIR}/mcc_generated_files/mcc.o mcc_generated_files/mcc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/91dbb1a64b0eb1b4a7d883c67cfbb62c87a50550 .generated_files/flags/default/90b386029bd3786c6bb60d0a18451b496f288066
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -I"FreeRTOS/include" -I"Board" -I"FreeRTOS/portable/MPLAB/PIC32MM" -I"mcc_generated_files/usb" -I"libs/utils/inc" -MP -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 

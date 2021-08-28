@@ -29,15 +29,15 @@ please contact mla_licensing@microchip.com
 
 
 /** DEFINITIONS ****************************************************/
-#define USB_EP0_BUFF_SIZE		8	// Valid Options: 8, 16, 32, or 64 bytes.
+#define USB_EP0_BUFF_SIZE		64	// Valid Options: 8, 16, 32, or 64 bytes.
 								// Using larger options take more SRAM, but
 								// does not provide much advantage in most types
 								// of applications.  Exceptions to this, are applications
 								// that use EP0 IN or OUT for sending large amounts of
 								// application related data.
 									
-#define USB_MAX_NUM_INT     	2   //Set this number to match the maximum interface number used in the descriptors for this firmware project
-#define USB_MAX_EP_NUMBER	    2   //Set this number to match the maximum endpoint number used in the descriptors for this firmware project
+#define USB_MAX_NUM_INT     	4   //Set this number to match the maximum interface number used in the descriptors for this firmware project
+#define USB_MAX_EP_NUMBER	    6   //Set this number to match the maximum endpoint number used in the descriptors for this firmware project
 
 //Device descriptor - if these two definitions are not defined then
 //  a const USB_DEVICE_DESCRIPTOR variable by the exact name of device_dsc
@@ -165,6 +165,16 @@ please contact mla_licensing@microchip.com
 #define CDC_DATA_EP             2
 #define CDC_DATA_OUT_EP_SIZE    64
 #define CDC_DATA_IN_EP_SIZE     64
+
+#define CDC2_COMM_INTF_ID        0x2
+#define CDC2_COMM_EP             3
+#define CDC2_COMM_IN_EP_SIZE      10
+
+#define CDC2_DATA_INTF_ID        0x03
+#define CDC2_DATA_EP             4
+#define CDC2_DATA_OUT_EP_SIZE    64
+#define CDC2_DATA_IN_EP_SIZE     64
+
 
 #define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D1 //Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and Serial_State commands
 //#define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D2 //Send_Break command

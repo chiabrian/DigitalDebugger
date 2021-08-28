@@ -65,6 +65,10 @@ please contact mla_licensing@microchip.com
 volatile unsigned char cdc_data_tx[CDC_DATA_IN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;
 volatile unsigned char cdc_data_rx[CDC_DATA_OUT_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;
 
+volatile unsigned char cdc2_data_tx[CDC_DATA_IN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;
+volatile unsigned char cdc2_data_rx[CDC_DATA_OUT_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;
+
+
 typedef union
 {
     LINE_CODING lineCoding;
@@ -90,6 +94,15 @@ uint8_t cdc_mem_type;          // _ROM, _RAM
 USB_HANDLE CDCDataOutHandle;
 USB_HANDLE CDCDataInHandle;
 
+uint8_t cdc2_rx_len;            // total rx length
+uint8_t cdc2_trf_state;         // States are defined cdc.h
+POINTER pCDC2Src;            // Dedicated source pointer
+POINTER pCDC2Dst;            // Dedicated destination pointer
+uint8_t cdc2_tx_len;            // total tx length
+uint8_t cdc2_mem_type;          // _ROM, _RAM
+
+USB_HANDLE CDC2DataOutHandle;
+USB_HANDLE CDC2DataInHandle;
 
 CONTROL_SIGNAL_BITMAP control_signal_bitmap;
 uint32_t BaudRateGen;			// BRG value calculated from baud rate
@@ -161,7 +174,9 @@ void USBCheckCDCRequest(void)
      * CDC class, else return
      */
     if((SetupPkt.bIntfID != CDC_COMM_INTF_ID)&&
-       (SetupPkt.bIntfID != CDC_DATA_INTF_ID)) return;
+       (SetupPkt.bIntfID != CDC_DATA_INTF_ID)&&
+       (SetupPkt.bIntfID != CDC2_COMM_INTF_ID)&&
+       (SetupPkt.bIntfID != CDC2_COMM_INTF_ID)) return;
     
     switch(SetupPkt.bRequest)
     {
@@ -315,8 +330,14 @@ void CDCInitEP(void)
     USBEnableEndpoint(CDC_COMM_EP,USB_IN_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
     USBEnableEndpoint(CDC_DATA_EP,USB_IN_ENABLED|USB_OUT_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
 
+    USBEnableEndpoint(CDC2_COMM_EP,USB_IN_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
+    USBEnableEndpoint(CDC2_DATA_EP,USB_IN_ENABLED|USB_OUT_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
+    
     CDCDataOutHandle = USBRxOnePacket(CDC_DATA_EP,(uint8_t*)&cdc_data_rx,sizeof(cdc_data_rx));
     CDCDataInHandle = NULL;
+    
+    CDC2DataOutHandle = USBRxOnePacket(CDC2_DATA_EP,(uint8_t*)&cdc2_data_rx,sizeof(cdc2_data_rx));
+    CDC2DataInHandle = NULL;
 
     #if defined(USB_CDC_SUPPORT_DSR_REPORTING)
       	CDCNotificationInHandle = NULL;
@@ -344,6 +365,7 @@ void CDCInitEP(void)
   	#endif
     
     cdc_trf_state = CDC_TX_READY;
+    cdc2_trf_state = CDC_TX_READY;
 }//end CDCInitEP
 
 
@@ -435,6 +457,16 @@ bool USBCDCEventHandler(USB_EVENT event, void *pdata, uint16_t size)
                 //flush all of the data in the CDC buffer
                 cdc_trf_state = CDC_TX_READY;
                 cdc_tx_len = 0;
+            }
+            if(pdata == CDC2DataOutHandle)
+            {
+                CDC2DataOutHandle = USBRxOnePacket(CDC2_DATA_EP,(uint8_t*)&cdc2_data_rx,sizeof(cdc2_data_rx));
+            }
+            if(pdata == CDC2DataInHandle)
+            {
+                //flush all of the data in the CDC buffer
+                cdc2_trf_state = CDC_TX_READY;
+                cdc2_tx_len = 0;
             }
             break;
         default:
