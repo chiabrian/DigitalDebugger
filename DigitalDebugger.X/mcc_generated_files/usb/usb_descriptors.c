@@ -157,9 +157,9 @@ const USB_DEVICE_DESCRIPTOR device_dsc=
     0x12,                   // Size of this descriptor in bytes
     USB_DESCRIPTOR_DEVICE,  // DEVICE descriptor type
     0x0200,                 // USB Spec Release Number in BCD format
-    2,//,0xEF,                   // Class Code
+    0xEF,//2,//,0xEF,                   // Class Code
     2,//0x02,                   // Subclass code
-    0,//0x01,                   // Protocol code
+    0x01,//0,//0x01,                   // Protocol code
     USB_EP0_BUFF_SIZE,      // Max packet size for EP0, see usb_device_config.h
     0x04D8,//x1FC9,//0x04D8,                 // Vendor ID
     0x000A,//0x00A3,//0x000A,                 // Product ID
