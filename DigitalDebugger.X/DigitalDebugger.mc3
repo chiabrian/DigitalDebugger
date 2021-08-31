@@ -10769,7 +10769,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USB" name="DeviceClass"/>
-         <value>CDC</value>
+         <value>Vendor</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USB" name="DevicePID"/>

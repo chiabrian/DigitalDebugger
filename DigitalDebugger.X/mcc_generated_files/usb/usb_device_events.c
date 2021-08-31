@@ -97,7 +97,12 @@ bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size
     return true;
 }
 
+extern void MCC_USB_CDC_DemoTasks(void);
+
 void __attribute__((vector (_USB_VECTOR), interrupt(IPL1SOFT))) USB_ISR()
 {
     USBDeviceTasks();
+    
+    MCC_USB_CDC_DemoTasks();
+    LATBINV = 0x0002;
 }

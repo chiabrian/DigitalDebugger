@@ -61,7 +61,6 @@ static void usb_task(void *pvParameters)
     TickType_t xTicksToDelay = 1;
     while(1)
     {
-        MCC_USB_CDC_DemoTasks();
         vTaskDelay(xTicksToDelay);
     }
 }
@@ -70,13 +69,14 @@ static void sys_task(void *pvParameters)
 {
     TickType_t xTicksToDelay = 250;
     
-    xTaskCreate(usb_task,
-        (char*)"usb_task",
-        configMINIMAL_STACK_SIZE,
-        NULL,
-        tskIDLE_PRIORITY + 1,
-        NULL);
-        
+//    xTaskCreate(usb_task,
+//        (char*)"usb_task",
+//        configMINIMAL_STACK_SIZE,
+//        NULL,EP_CONFIG
+//        tskIDLE_PRIORITY + 1,
+//        NULL);
+    SYSTEM_Initialize();
+    
     while(1)
     {
         LATBINV = 0x0001;

@@ -36,8 +36,8 @@ please contact mla_licensing@microchip.com
 								// that use EP0 IN or OUT for sending large amounts of
 								// application related data.
 									
-#define USB_MAX_NUM_INT     	4   //Set this number to match the maximum interface number used in the descriptors for this firmware project
-#define USB_MAX_EP_NUMBER	    6   //Set this number to match the maximum endpoint number used in the descriptors for this firmware project
+#define USB_MAX_NUM_INT         2   //Set this number to match the maximum interface number used in the descriptors for this firmware project
+#define USB_MAX_EP_NUMBER       4   //Set this number to match the maximum endpoint number used in the descriptors for this firmware project
 
 //Device descriptor - if these two definitions are not defined then
 //  a const USB_DEVICE_DESCRIPTOR variable by the exact name of device_dsc
@@ -157,25 +157,37 @@ please contact mla_licensing@microchip.com
 
 /** ENDPOINTS ALLOCATION *******************************************/
 /* CDC */
-#define CDC_COMM_INTF_ID        0x0
-#define CDC_COMM_EP              1
-#define CDC_COMM_IN_EP_SIZE      10
+#define CDC1_COMM_INTF_ID       0x00
+#define CDC1_COMM_EP            1
+#define CDC1_DATA_INTF_ID       0x01
+#define CDC1_DATA_EP            2
 
-#define CDC_DATA_INTF_ID        0x01
-#define CDC_DATA_EP             2
+#define CDC2_COMM_INTF_ID       0x02
+#define CDC2_COMM_EP            3
+#define CDC2_DATA_INTF_ID       0x03
+#define CDC2_DATA_EP            4
+
+#define CDC_COMM_IN_EP_SIZE     10
 #define CDC_DATA_OUT_EP_SIZE    64
 #define CDC_DATA_IN_EP_SIZE     64
 
-#define CDC2_COMM_INTF_ID        0x2
-#define CDC2_COMM_EP             3
-#define CDC2_COMM_IN_EP_SIZE      10
+#define USB_CDC_SET_LINE_CODING_HANDLER1 USART_setLineCodingHandler1
+#define USB_CDC_SET_LINE_CODING_HANDLER2 USART_setLineCodingHandler2
 
-#define CDC2_DATA_INTF_ID        0x03
-#define CDC2_DATA_EP             4
-#define CDC2_DATA_OUT_EP_SIZE    64
-#define CDC2_DATA_IN_EP_SIZE     64
+//#define USB_CDC_SUPPORT_HARDWARE_FLOW_CONTROL
+//#define USB_CDC_SUPPORT_DTR_SIGNALING
 
+//Define the logic level for the "active" state.  Setting is only relevant if
+//the respective function is enabled.  Allowed options are:
+//1 = active state logic level is Vdd
+//0 = active state logic level is Vss
 
+#define USB_CDC_CTS_ACTIVE_LEVEL    0
+#define USB_CDC_RTS_ACTIVE_LEVEL    0
+#define USB_CDC_DSR_ACTIVE_LEVEL    0
+#define USB_CDC_DTR_ACTIVE_LEVEL    0     
+
+//#define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D2 //Send_Break command
 #define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D1 //Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and Serial_State commands
 //#define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D2 //Send_Break command
 

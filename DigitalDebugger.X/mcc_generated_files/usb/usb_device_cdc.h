@@ -98,10 +98,12 @@ please contact mla_licensing@microchip.com
 
 #if defined(USB_CDC_SET_LINE_CODING_HANDLER) 
     #define LINE_CODING_TARGET &cdc_notice.SetLineCoding._byte[0]
-    #define LINE_CODING_PFUNC &USB_CDC_SET_LINE_CODING_HANDLER
+    #define LINE_CODING_PFUNC1 &USB_CDC_SET_LINE_CODING_HANDLER1
+    #define LINE_CODING_PFUNC2 &USB_CDC_SET_LINE_CODING_HANDLER2
 #else
     #define LINE_CODING_TARGET &line_coding._byte[0]
-    #define LINE_CODING_PFUNC NULL
+    #define LINE_CODING_PFUNC1 NULL
+    #define LINE_CODING_PFUNC2 NULL
 #endif
 
 #if defined(USB_CDC_SUPPORT_HARDWARE_FLOW_CONTROL)
@@ -390,7 +392,7 @@ please contact mla_licensing@microchip.com
         and complete.
   
  *****************************************************************************/
-#define USBUSARTIsTxTrfReady()      (cdc_trf_state == CDC_TX_READY)
+#define USBUSARTIsTxTrfReady(i)      (cdc_trf_state[i] == CDC_TX_READY)
 
 /******************************************************************************
     Function:
@@ -400,7 +402,7 @@ please contact mla_licensing@microchip.com
         Deprecated in MCHPFSUSB v2.3.  This macro has been replaced by 
         USBUSARTIsTxTrfReady().
  *****************************************************************************/
-#define mUSBUSARTIsTxTrfReady()     USBUSARTIsTxTrfReady()
+#define mUSBUSARTIsTxTrfReady(i)     USBUSARTIsTxTrfReady(i)
 
 /******************************************************************************
     Function:
@@ -448,12 +450,12 @@ please contact mla_licensing@microchip.com
         
   
  *****************************************************************************/
-#define mUSBUSARTTxRam(pData,len)   \
+#define mUSBUSARTTxRam(index,pData,len)   \
 {                                   \
-    pCDCSrc.bRam = pData;           \
-    cdc_tx_len = len;               \
-    cdc_mem_type = USB_EP0_RAM;     \
-    cdc_trf_state = CDC_TX_BUSY;    \
+    pCDCSrc[index].bRam = pData;           \
+    cdc_tx_len[index] = len;               \
+    cdc_mem_type[index] = USB_EP0_RAM;     \
+    cdc_trf_state[index] = CDC_TX_BUSY;    \
 }
 
 /******************************************************************************
@@ -495,12 +497,12 @@ please contact mla_licensing@microchip.com
         actual transfer is handled by CDCTxService().
                     
  *****************************************************************************/
-#define mUSBUSARTTxRom(pData,len)   \
+#define mUSBUSARTTxRom(idx,pData,len)   \
 {                                   \
-    pCDCSrc.bRom = pData;           \
-    cdc_tx_len = len;               \
-    cdc_mem_type = USB_EP0_ROM;     \
-    cdc_trf_state = CDC_TX_BUSY;    \
+    pCDCSrc[idx].bRom = pData;           \
+    cdc_tx_len[idx] = len;               \
+    cdc_mem_type[idx] = USB_EP0_ROM;     \
+    cdc_trf_state[idx] = CDC_TX_BUSY;    \
 }
 
 /**************************************************************************
@@ -663,7 +665,7 @@ bool USBCDCEventHandler(USB_EVENT event, void *pdata, uint16_t size);
               indicates that no new CDC bulk OUT endpoint data was available.
                                                                                    
   **********************************************************************************/
-uint8_t getsUSBUSART(uint8_t *buffer, uint8_t len);
+uint8_t getsUSBUSART(int index, uint8_t *buffer, uint8_t len);
 
 /******************************************************************************
   Function:
@@ -705,7 +707,7 @@ uint8_t getsUSBUSART(uint8_t *buffer, uint8_t len);
     uint8_t length - the number of bytes to be transfered (must be less than 255).
 		
  *****************************************************************************/
-void putUSBUSART(uint8_t *data, uint8_t Length);
+void putUSBUSART(int index, uint8_t *data, uint8_t Length);
 
 /******************************************************************************
 	Function:
@@ -746,7 +748,7 @@ void putUSBUSART(uint8_t *data, uint8_t Length);
                             will be transferred to the host.
 		
  *****************************************************************************/
-void putsUSBUSART(char *data);
+void putsUSBUSART(uint8_t index, char *data);
 
 
 /**************************************************************************
@@ -789,7 +791,7 @@ void putsUSBUSART(char *data);
                             will be transferred to the host.
                                                                            
   **************************************************************************/
-void putrsUSBUSART(const char *data);
+void putrsUSBUSART(uint8_t index, const char *data);
 
 /************************************************************************
   Function:
@@ -841,7 +843,7 @@ void putrsUSBUSART(const char *data);
   Remarks:
     None                                                                 
   ************************************************************************/
-void CDCTxService(void);
+void CDCTxService(int index);
 
 
 /** S T R U C T U R E S ******************************************************/
@@ -959,13 +961,13 @@ typedef struct
 
 //DOM-IGNORE-BEGIN
 /** E X T E R N S ************************************************************/
-extern uint8_t cdc_rx_len;
+extern uint8_t cdc_rx_len[2];
 extern USB_HANDLE lastTransmission;
 
-extern uint8_t cdc_trf_state;
-extern POINTER pCDCSrc;
-extern uint8_t cdc_tx_len;
-extern uint8_t cdc_mem_type;
+extern uint8_t cdc_trf_state[2];
+extern POINTER pCDCSrc[2];
+extern uint8_t cdc_tx_len[2];
+extern uint8_t cdc_mem_type[2];
 
 extern CDC_NOTICE cdc_notice;
 extern LINE_CODING line_coding;
@@ -981,11 +983,8 @@ extern const uint8_t configDescriptor1[];
 //------------------------------------------------------------------------------
 //void USBCheckCDCRequest(void);
 //void CDCInitEP(void);
-//bool USBCDCEventHandler(USB_EVENT event, void *pdata, uint16_t size);
-//uint8_t getsUSBUSART(char *buffer, uint8_t len);
-//void putUSBUSART(char *data, uint8_t Length);
-//void putsUSBUSART(char *data);
-//void putrsUSBUSART(const const char *data);
+//uint8_t getsUSBUSART(int index, char *buffer, uint8_t len);
+//void putUSBUSART(int index, char *data, uint8_t Length);
 //void CDCTxService(void);
 //void CDCNotificationHandler(void);
 //------------------------------------------------------------------------------
